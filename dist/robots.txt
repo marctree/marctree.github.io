@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://marctree.github.io/https://sitemap-index.xml
