@@ -779,7 +779,7 @@ progress {
 .container-sm,
 .container-xl,
 .container-xxl {
-    --bs-gutter-x: 1.5rem;
+    /*--bs-gutter-x: 1.5rem;*/
     --bs-gutter-y: 0;
     width: 100%;
     padding-right: calc(var(--bs-gutter-x) * .5);
@@ -1066,7 +1066,7 @@ progress {
 
 .g-5,
 .gx-5 {
-    --bs-gutter-x: 12rem
+    /*--bs-gutter-x: 12rem*/
 }
 
 .g-5,
@@ -1350,8 +1350,9 @@ progress {
 
     .col-md-4 {
         flex: 0 0 auto;
-        width: 33.33333333%
-    }
+        width: 33.33333333%;
+
+    }   
 
     .col-md-5 {
         flex: 0 0 auto;
@@ -4437,7 +4438,7 @@ fieldset:disabled .btn {
 
 .nav-underline {
     --bs-nav-underline-gap: 1rem;
-    --bs-nav-underline-border-width: 0.125rem;
+    /*--bs-nav-underline-border-width: 0.125rem;*/
     --bs-nav-underline-link-active-color: var(--bs-emphasis-color);
     gap: var(--bs-nav-underline-gap)
 }
@@ -9079,7 +9080,7 @@ fieldset:disabled .btn {
 }
 
 .p-4 {
-    padding: 1.5rem !important
+padding: 1rem !important
 }
 
 .p-5 {
