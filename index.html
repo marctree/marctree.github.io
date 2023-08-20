@@ -4,7 +4,9 @@
 <head>
   <script src="./assets/dist/js/color-modes.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-  <script src="./assets/dist/js/sidebar.js"></script>
+  <script src="./assets/dist/js/programmingLanguages.js"></script>
+  <script src="./assets/dist/js/staticWebpages.js"></script>
+  <script src="./assets/dist/js/operatingSystems.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
   <meta charset="utf-8">
@@ -143,19 +145,33 @@
     
     
     <!--SIDEPANEL CONTENT-->
-    <div id="sidebar" class="sidebar">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeSidebar()">x</a>
+    <div id="programming" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeProgramming()">x</a>
       <h3 class="sidebar-header">Overview</h3>
       <hr>
       <!--Programming Langauges / External packages-->
-      <p class="sidebaritems" id="python" style="display: none;">Inhalt für Python</p>
-      <p class="sidebaritems" id="go" style="display: none;">Inhalt für Go</p>
-      <p class="sidebaritems" id="tailwind" style="display: none;">Inhalt für tailwind</p>
-      <p class="sidebaritems" id="react" style="display: none;">Inhalt für react</p>
-      <p class="sidebaritems" id="javascript" style="display: none;">Inhalt für javascript</p>
-      <p class="sidebaritems" id="node" style="display: none;">Inhalt für node</p>
+      <p class="sidebaritems python" id="python" style="display: none;">Inhalt für Python</p>
+      <p class="sidebaritems go" id="go" style="display: none;">Inhalt für Go</p>
+      <p class="sidebaritems tailwind" id="tailwind" style="display: none;">Inhalt für tailwind</p>
+      <p class="sidebaritems react" id="react" style="display: none;">Inhalt für react</p>
+      <p class="sidebaritems javascript" id="javascript" style="display: none;">Inhalt für javascript</p>
+      <p class="sidebaritems node" id="node" style="display: none;">Inhalt für node</p>
+    </div>
+
+    <!--Programming Langauges / External packages-->
+    <div id="static" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeStatic()">x</a>
+      <h3 class="sidebar-header">Overview</h3>
+      <hr>
       <p class="sidebaritems" id="html" style="display: none;">Inhalt für html</p>
       <p class="sidebaritems" id="css" style="display: none;">Inhalt für css</p>
+    </div>
+
+    <!--Programming Langauges / External packages-->
+    <div id="systems" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeSystems()">x</a>
+      <h3 class="sidebar-header">Overview</h3>
+      <hr>
       <p class="sidebaritems" id="windows" style="display: none;">Inhalt für windows</p>
       <p class="sidebaritems" id="ubuntu" style="display: none;">Inhalt für ubuntu</p>
       <p class="sidebaritems" id="rhel" style="display: none;">Inhalt für rhel</p>
@@ -163,8 +179,7 @@
 
 
 
-    
-
+  
 
     <div class="row g-5">
       <div class="col-md-8">
