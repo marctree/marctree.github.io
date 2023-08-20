@@ -11,7 +11,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="">
   <meta name="generator" content="Hugo 0.115.4">
-  <title>Blog Template · Bootstrap v5.3</title>
+  <title>Marc Linden | DevOps Engineer</title>
 
   <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/blog/">
 
@@ -144,16 +144,26 @@
     
     <!--SIDEPANEL CONTENT-->
     <div id="sidebar" class="sidebar">
-      <a href="javascript:void(0)" class="closebtn" onclick="openSidebar()">x</a>
+      <a href="javascript:void(0)" class="closebtn" onclick="closeSidebar()">x</a>
       <h3 class="sidebar-header">Overview</h3>
       <hr>
+      <!--Programming Langauges / External packages-->
       <p class="sidebaritems" id="python" style="display: none;">Inhalt für Python</p>
       <p class="sidebaritems" id="go" style="display: none;">Inhalt für Go</p>
       <p class="sidebaritems" id="tailwind" style="display: none;">Inhalt für tailwind</p>
       <p class="sidebaritems" id="react" style="display: none;">Inhalt für react</p>
       <p class="sidebaritems" id="javascript" style="display: none;">Inhalt für javascript</p>
       <p class="sidebaritems" id="node" style="display: none;">Inhalt für node</p>
+      <p class="sidebaritems" id="html" style="display: none;">Inhalt für html</p>
+      <p class="sidebaritems" id="css" style="display: none;">Inhalt für css</p>
+      <p class="sidebaritems" id="windows" style="display: none;">Inhalt für windows</p>
+      <p class="sidebaritems" id="ubuntu" style="display: none;">Inhalt für ubuntu</p>
+      <p class="sidebaritems" id="rhel" style="display: none;">Inhalt für rhel</p>
     </div>
+
+
+
+    
 
 
     <div class="row g-5">
@@ -181,35 +191,71 @@
 
               <!--PROGRAMMING LANGUAGES / EXTERNAL PACKAGES-->
               <g class="hover_group" opacity="0">
-                <a id="python" onclick="openSidebar('python')">
+                <a id="python" onclick="openProgrammingLanguages('python')">
                   <rect x="640" y="100" opacity="0.2" fill="#FFFFFF" width="130" height="60" rx="9" ry="9"></rect>
                 </a>
               </g>
               <g class="hover_group" opacity="0">
-                <a id="go" onclick="openSidebar('go')">
+                <a id="go" onclick="openProgrammingLanguages('go')">
                   <rect x="780" y="100" opacity="0.2" fill="#FFFFFF" width="130" height="60" rx="9" ry="9"></rect>
                 </a>
               </g>
               <g class="hover_group" opacity="0">
-                <a class="sidebar" onclick="openSidebar('tailwind')">
+                <a id="tailwind" onclick="openProgrammingLanguages('tailwind')">
                   <rect x="640" y="170" opacity="0.2" fill="#FFFFFF" width="130" height="60" rx="9" ry="9"></rect>
                 </a>
               </g>
               <g class="hover_group" opacity="0">
-                <a class="sidebar" onclick="openSidebar('react')">
+                <a id="react" onclick="openProgrammingLanguages('react')">
                   <rect x="780" y="170" opacity="0.2" fill="#FFFFFF" width="130" height="60" rx="9" ry="9"></rect>
                 </a>
               </g>
               <g class="hover_group" opacity="0">
-                <a class="sidebar" onclick="openSidebar('javascript')">
+                <a id="javascript" onclick="openProgrammingLanguages('javascript')">
                   <rect x="640" y="240" opacity="0.2" fill="#FFFFFF" width="130" height="60" rx="9" ry="9"></rect>
                 </a>
               </g>
               <g class="hover_group" opacity="0">
-                <a class="sidebar" onclick="openSidebar('node')">
+                <a id="node" onclick="openProgrammingLanguages('node')">
                   <rect x="780" y="240" opacity="0.2" fill="#FFFFFF" width="130" height="60" rx="9" ry="9"></rect>
                 </a>
               </g>
+
+
+              <!--Static Webpages-->
+              <g class="hover_group" opacity="0">
+                <a id="html" onclick="openStaticWebpages('html')">
+                  <rect y="280" opacity="0.2" fill="#FFFFFF" width="130" height="60" rx="9" ry="9"></rect>
+                </a>
+              </g>
+              <g class="hover_group" opacity="0">
+                <a id="css" onclick="openStaticWebpages('css')">
+                  <rect y="350" opacity="0.2" fill="#FFFFFF" width="130" height="60" rx="9" ry="9"></rect>
+                </a>
+              </g>
+
+
+              <!--Operating Systems-->
+              <g class="hover_group" opacity="0">
+                <a id="windows" onclick="openOperatingSystems('windows')">
+                  <rect x="450" y="440" opacity="0.2" fill="#FFFFFF" width="130" height="60" rx="9" ry="9"></rect>
+                </a>
+              </g>
+              <g class="hover_group" opacity="0">
+                <a id="ubuntu" onclick="openOperatingSystems('ubuntu')">
+                  <rect x="590" y="440" opacity="0.2" fill="#FFFFFF" width="130" height="60" rx="9" ry="9"></rect>
+                </a>
+              </g>
+              <g class="hover_group" opacity="0">
+                <a id="rhel" onclick="openOperatingSystems('rhel')">
+                  <rect x="590" y="520" opacity="0.2" fill="#FFFFFF" width="130" height="60" rx="9" ry="9"></rect>
+                </a>
+              </g>
+
+
+
+
+
             </svg>
           </figure>
         </article>

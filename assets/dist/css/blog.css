@@ -198,6 +198,21 @@ h6 {
 .hover_group:hover
 {
     opacity:1;
+    cursor: pointer;
+}
+
+
+/* Set roadmap topic to specific porgress  */
+.learning:hover
+{
+    opacity:1;
+    cursor: pointer;
+}
+
+.confident:hover
+{
+    opacity:1;
+    cursor: pointer;
 }
 
 .closebtn {
@@ -232,7 +247,6 @@ h6 {
 
 .sidebar a:hover {
   color: #818181;
-  cursor: pointer;
 }
 
 .open-sidebar {
