@@ -142,13 +142,17 @@
   <main class="container">
     
     
-    <!--SIDEPANEL-->
+    <!--SIDEPANEL CONTENT-->
     <div id="sidebar" class="sidebar">
       <a href="javascript:void(0)" class="closebtn" onclick="openSidebar()">x</a>
       <h3 class="sidebar-header">Overview</h3>
       <hr>
       <p class="sidebaritems" id="python" style="display: none;">Inhalt für Python</p>
       <p class="sidebaritems" id="go" style="display: none;">Inhalt für Go</p>
+      <p class="sidebaritems" id="tailwind" style="display: none;">Inhalt für tailwind</p>
+      <p class="sidebaritems" id="react" style="display: none;">Inhalt für react</p>
+      <p class="sidebaritems" id="javascript" style="display: none;">Inhalt für javascript</p>
+      <p class="sidebaritems" id="node" style="display: none;">Inhalt für node</p>
     </div>
 
 
@@ -171,8 +175,8 @@
             <br>
           <figure>
             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-              viewBox="0 0 920 2931" preserveAspectRatio="xMinYMin meet">
-              <image width="920" height="2931" xlink:href="./assets/dist/img/devops_roadmap.svg">
+              viewBox="0 0 921 3032" preserveAspectRatio="xMinYMin meet">
+              <image width="921" height="3032" xlink:href="./assets/dist/img/devops_roadmap.svg">
               </image>
 
               <!--PROGRAMMING LANGUAGES / EXTERNAL PACKAGES-->
@@ -187,22 +191,22 @@
                 </a>
               </g>
               <g class="hover_group" opacity="0">
-                <a class="sidebar" onclick="openNav()">
+                <a class="sidebar" onclick="openSidebar('tailwind')">
                   <rect x="640" y="170" opacity="0.2" fill="#FFFFFF" width="130" height="60" rx="9" ry="9"></rect>
                 </a>
               </g>
               <g class="hover_group" opacity="0">
-                <a class="sidebar" onclick="openNav()">
+                <a class="sidebar" onclick="openSidebar('react')">
                   <rect x="780" y="170" opacity="0.2" fill="#FFFFFF" width="130" height="60" rx="9" ry="9"></rect>
                 </a>
               </g>
               <g class="hover_group" opacity="0">
-                <a class="sidebar" onclick="openNav()">
+                <a class="sidebar" onclick="openSidebar('javascript')">
                   <rect x="640" y="240" opacity="0.2" fill="#FFFFFF" width="130" height="60" rx="9" ry="9"></rect>
                 </a>
               </g>
               <g class="hover_group" opacity="0">
-                <a class="sidebar" onclick="openNav()">
+                <a class="sidebar" onclick="openSidebar('node')">
                   <rect x="780" y="240" opacity="0.2" fill="#FFFFFF" width="130" height="60" rx="9" ry="9"></rect>
                 </a>
               </g>
@@ -221,7 +225,7 @@
       <div class="col-md-4">
         <div class="position-sticky" style="top: 2rem;">
           <div class="p-4 mb-3 bg-body-tertiary rounded">
-            <img id="avatar" src="https://www.w3schools.com/tags/img_girl.jpg" height="100%" width="100%">
+            <!--<img id="avatar" src="https://www.w3schools.com/tags/img_girl.jpg" height="100%" width="100%">-->
             <h5>Marc Linden</h5>
             <h6>DevOps Engineer</h6>
             <br>
