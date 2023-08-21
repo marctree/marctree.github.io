@@ -160,25 +160,28 @@ h6 {
   z-index: 1500;
 }
 
-#git, #linkedin{
-  color: white;
+#git,
+#linkedin {
   text-decoration: none;
   padding-left: 1.2rem;
   position: absolute;
   padding-top: 0.15rem;
-  
+
 }
 
-#roadmaps{
-  color:white;
+a {
+  color: inherit;
+}
+
+#roadmaps {
   text-decoration: none;
 }
 
-#git:hover{
+#git:hover {
   color: rgba(222, 226, 230, 0.75);
 }
 
-#linkedin:hover{
+#linkedin:hover {
   color: rgba(222, 226, 230, 0.75);
 }
 
@@ -186,33 +189,26 @@ h6 {
   color: rgba(222, 226, 230, 0.75);
 }
 
-#roadmaps:hover {
-  color: rgba(222, 226, 230, 0.75);
-}
-
 /* The sidepanel menu */
-.sidebar-header{
+.sidebar-header {
   padding-left: 2rem;
 }
 
-.hover_group:hover
-{
-    opacity:1;
-    cursor: pointer;
+.hover_group:hover {
+  opacity: 1;
+  cursor: pointer;
 }
 
 
 /* Set roadmap topic to specific porgress  */
-.learning:hover
-{
-    opacity:1;
-    cursor: pointer;
+.learning:hover {
+  opacity: 1;
+  cursor: pointer;
 }
 
-.confident:hover
-{
-    opacity:1;
-    cursor: pointer;
+.confident:hover {
+  opacity: 1;
+  cursor: pointer;
 }
 
 .closebtn {
@@ -253,7 +249,7 @@ h6 {
   left: 0;
 }
 
-.sidebaritems{
+.sidebaritems {
   padding-left: 2rem;
 }
 
@@ -263,8 +259,14 @@ h6 {
     height: auto;
     position: relative;
   }
-  .sidebar a {float: left;}
-  div.content {margin-left: 0;}
+
+  .sidebar a {
+    float: left;
+  }
+
+  div.content {
+    margin-left: 0;
+  }
 }
 
 /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
@@ -274,10 +276,12 @@ h6 {
     position: relative;
     display: none;
   }
-  .hover_group:hover{
+
+  .hover_group:hover {
     pointer-events: none;
-    display:none;
+    display: none;
   }
+
   .sidebar a {
     text-align: center;
     float: none;
