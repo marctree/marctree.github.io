@@ -194,21 +194,24 @@ a {
   padding-left: 2rem;
 }
 
-.hover_group:hover {
-  opacity: 1;
-  cursor: pointer;
-}
+/*.hover_group:hover {
+  opacity: 0;
+}*/
 
 
 /* Set roadmap topic to specific porgress  */
 .learning:hover {
   opacity: 1;
   cursor: pointer;
+  pointer-events: none;
+  display: none;
 }
 
 .confident:hover {
   opacity: 1;
   cursor: pointer;
+  pointer-events: none;
+  display: none;
 }
 
 .closebtn {
@@ -258,10 +261,18 @@ a {
   .sidebar {
     height: auto;
     position: relative;
+    display: none;
+
   }
+
+  /*.hover_group:hover {
+    pointer-events: none;
+    display: none;
+  }*/
 
   .sidebar a {
     float: left;
+
   }
 
   div.content {
@@ -277,13 +288,17 @@ a {
     display: none;
   }
 
-  .hover_group:hover {
+  /*.hover_group:hover {
     pointer-events: none;
     display: none;
-  }
+  }*/
 
   .sidebar a {
     text-align: center;
     float: none;
   }
+}
+
+ul li {
+  padding: 5px 0px;
 }

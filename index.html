@@ -5,8 +5,8 @@
   <script src="./assets/dist/js/color-modes.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 
-  <!--INTERACTIVE ROADMAP-->
-  <script src="./assets/dist/js/interactiveRoadmap.js"></script>
+  <!--INTERACTIVE ROADMAP
+  <script src="./assets/dist/js/interactiveRoadmap.js"></script>-->
 
 
 
@@ -68,35 +68,48 @@
   </svg>
 
   <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
-    <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center"
-            id="bd-theme"
-            type="button"
-            aria-expanded="false"
-            data-bs-toggle="dropdown"
-            aria-label="Toggle theme (auto)">
-      <svg class="bi my-1 theme-icon-active" width="1em" height="1em"><use href="#circle-half"></use></svg>
+    <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button"
+      aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (auto)">
+      <svg class="bi my-1 theme-icon-active" width="1em" height="1em">
+        <use href="#circle-half"></use>
+      </svg>
       <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
     </button>
     <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
       <li>
-        <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
-          <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#sun-fill"></use></svg>
+        <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light"
+          aria-pressed="false">
+          <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em">
+            <use href="#sun-fill"></use>
+          </svg>
           Light
-          <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+          <svg class="bi ms-auto d-none" width="1em" height="1em">
+            <use href="#check2"></use>
+          </svg>
         </button>
       </li>
       <li>
-        <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
-          <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#moon-stars-fill"></use></svg>
+        <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark"
+          aria-pressed="false">
+          <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em">
+            <use href="#moon-stars-fill"></use>
+          </svg>
           Dark
-          <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+          <svg class="bi ms-auto d-none" width="1em" height="1em">
+            <use href="#check2"></use>
+          </svg>
         </button>
       </li>
       <li>
-        <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
-          <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#circle-half"></use></svg>
+        <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto"
+          aria-pressed="true">
+          <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em">
+            <use href="#circle-half"></use>
+          </svg>
           Auto
-          <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+          <svg class="bi ms-auto d-none" width="1em" height="1em">
+            <use href="#check2"></use>
+          </svg>
         </button>
       </li>
     </ul>
@@ -122,15 +135,14 @@
           id="defaultOpen">About</button>-->
         <button class="tablinks nav-item nav-link link-body-emphasis" onclick="openTab(event, 'Roadmap')"
           id="defaultOpen">Tech Stack</button>
-        <button class="tablinks nav-item nav-link link-body-emphasis"
-          onclick="openTab(event, 'Projects')">Projects</button>
+        <!--<button class="tablinks nav-item nav-link link-body-emphasis"
+          onclick="openTab(event, 'Projects')">Projects</button>-->
       </nav>
     </div>
     <hr>
   </div>
 
   <main class="container">
-
 
     <!--SIDEPANEL CONTENT
     PROGRAMMING LANGUAGE / EXTERNAL PACKAGES-->
@@ -251,7 +263,7 @@
 
     <!--SERVERLESS-->
     <div id="serverless" class="sidebar">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeServerless()"><strong>x</strong></a>
+      <a href="javascript:void(0)" class="closebtn" onclick="closeServerless()"><strong>x</strong></a>
       <h3 class="sidebar-header">Overview</h3>
       <hr>
       <p class="sidebaritems" id="vercel" style="display: none;">Inhalt für vercel</p>
@@ -259,14 +271,9 @@
     </div>
 
 
-
-
-
-
-
     <div class="row g-5">
       <div class="col-md-8">
-        <!--ABOUT-->
+        <!--ABOUT NOT ACTIVE-->
         <article id="About" class="blog-post tabcontent">
           <h2 class="display-5 link-body-emphasis mb-1">About</h2>
 
@@ -274,12 +281,38 @@
 
         <!--ROADMAP-->
         <article id="Roadmap" class="blog-post tabcontent">
-          <h2 class="display-5 link-body-emphasis mb-1">Roadmap</h2>
-
+          <h2 class="display-5 link-body-emphasis mb-1">Tech Stack - Roadmap</h2>
+          <hr>
           <p>This roadmap shows the current state of my learning progress and also my knowledge and skills regarding
             DevOps and full stack development technologies. This roadmap was inspired by the DevOps roadmap from <a
-              id="roadmaps" href="https://roadmap.sh/devops" style="color: inherit;">&#10094;roadmaps.sh&#10095;</a>.</p>
+              id="roadmaps" href="https://roadmap.sh/devops" style="color: inherit;">&#10094;roadmaps.sh&#10095;</a>.
+          </p>
+          <p>How to read the roadmap:
+          <ul style="list-style-type: '&#10095;';">
+            <li>&nbsp;&nbsp;The technologies (e.g. Python) are devided into categories (e.g. Programming Languages
+              Externa Packages)</li>
+            <li>&nbsp;&nbsp;There are two different colors for the current progress of a technology.</li>
+            <li>&nbsp;&nbsp;The <span style="color: #1BA1E2; font-weight: bold;">light blue</span> and <span
+                style="color: #018B0F; font-weight: bold;">green</span> color represent the current progress.</li>
+            <li>&nbsp;&nbsp;The <span style="color: #1BA1E2; font-weight: bold;">light blue</span> color depicts that my
+              knowledge of
+              this technology has atleast the basic level. Which means I can handle easy to immediate tasks but I'm
+              still learning this technology to get more confident in it.</li>
+            <li>&nbsp;&nbsp;The <span style="color: #018B0F; font-weight: bold;">green</span> color shows that im very
+              confident in this technologya and I can handle complex tasks, understand how to use this technology and
+              what it used for. I
+              also created or improved serveral project
+              and processes (at work or on my free time projects). But even when im very confident in my skill and
+              knowledge in this specific technology I will and I dont want not stop to learn even more. The IT never
+              sleeps and is
+              evolving at
+              a rapid pace. <span style="font-style: italic;">"Learning is like rowing against the current. If you stop,
+                you drift back. - Laozi"</span></li>
+          </ul>
+          </p>
+          <hr>
           <br>
+
           <figure>
             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
               viewBox="0 0 921 3032" preserveAspectRatio="xMinYMin meet">
@@ -288,63 +321,74 @@
 
               <!--PROGRAMMING LANGUAGES / EXTERNAL PACKAGES-->
               <g class="hover_group" opacity="0">
-                <a id="python" onclick="openProgrammingLanguages('python')">
+                <!--<a id="python" onclick="openProgrammingLanguages('python')">-->
+                <a id="python">
                   <rect x="640" y="100" opacity="0.2" fill="#FFFFFF" width="130" height="60" rx="9" ry="9"></rect>
                 </a>
               </g>
               <g class="hover_group" opacity="0">
-                <a id="go" onclick="openProgrammingLanguages('go')">
+                <!-- <a id="go" onclick="openProgrammingLanguages('go')">-->
+                <a id="go">
                   <rect x="780" y="100" opacity="0.2" fill="#FFFFFF" width="130" height="60" rx="9" ry="9"></rect>
                 </a>
               </g>
               <g class="hover_group" opacity="0">
-                <a id="tailwind" onclick="openProgrammingLanguages('tailwind')">
+                <!-- <a id="tailwind" onclick="openProgrammingLanguages('tailwind')">-->
+                <a id="tailwind">
                   <rect x="640" y="170" opacity="0.2" fill="#FFFFFF" width="130" height="60" rx="9" ry="9"></rect>
                 </a>
               </g>
               <g class="hover_group" opacity="0">
-                <a id="react" onclick="openProgrammingLanguages('react')">
+                <!-- <a id="react" onclick="openProgrammingLanguages('react')">-->
+                <a id="react">
                   <rect x="780" y="170" opacity="0.2" fill="#FFFFFF" width="130" height="60" rx="9" ry="9"></rect>
                 </a>
               </g>
               <g class="hover_group" opacity="0">
-                <a id="javascript" onclick="openProgrammingLanguages('javascript')">
-                  <rect x="640" y="240" opacity="0.2" fill="#FFFFFF" width="130" height="60" rx="9" ry="9"></rect>
+                <!--<a id="javascript" onclick="openProgrammingLanguages('javascript')">-->
+                <a id="javascript">
+                  <rect x="640" y="240" opacity="0.4" fill="#FDB000" width="130" height="60" rx="9" ry="9"></rect>
                 </a>
               </g>
               <g class="hover_group" opacity="0">
-                <a id="node" onclick="openProgrammingLanguages('node')">
-                  <rect x="780" y="240" opacity="0.2" fill="#FFFFFF" width="130" height="60" rx="9" ry="9"></rect>
+                <!-- <a id="node" onclick="openProgrammingLanguages('node')">-->
+                <a id="node">
+                  <rect x="780" y="240" opacity="0.4" fill="#FDB000" width="130" height="60" rx="9" ry="9"></rect>
                 </a>
               </g>
 
 
               <!--STATIC WEBPAGES-->
               <g class="hover_group" opacity="0">
-                <a id="html" onclick="openStaticWebpages('html')">
-                  <rect y="280" opacity="0.2" fill="#FFFFFF" width="130" height="60" rx="9" ry="9"></rect>
+                <!--<a id="html" onclick="openStaticWebpages('html')">-->
+                <a id="html">
+                  <rect y="280" opacity="0.4" fill="#018B0F" width="130" height="60" rx="9" ry="9"></rect>
                 </a>
               </g>
               <g class="hover_group" opacity="0">
-                <a id="css" onclick="openStaticWebpages('css')">
-                  <rect y="350" opacity="0.2" fill="#FFFFFF" width="130" height="60" rx="9" ry="9"></rect>
+                <!--<a id="css" onclick="openStaticWebpages('css')">-->
+                <a id="css">
+                  <rect y="350" opacity="0.4" fill="#018B0F" width="130" height="60" rx="9" ry="9"></rect>
                 </a>
               </g>
 
 
               <!--OPERATING SYSTEM-->
               <g class="hover_group" opacity="0">
-                <a id="windows" onclick="openOperatingSystems('windows')">
+                <!--<a id="windows" onclick="openOperatingSystems('windows')">-->
+                <a id="windows">
                   <rect x="450" y="440" opacity="0.2" fill="#FFFFFF" width="130" height="60" rx="9" ry="9"></rect>
                 </a>
               </g>
               <g class="hover_group" opacity="0">
-                <a id="ubuntu" onclick="openOperatingSystems('ubuntu')">
+                <!--<a id="ubuntu" onclick="openOperatingSystems('ubuntu')">-->
+                <a id="ubuntu">
                   <rect x="590" y="440" opacity="0.2" fill="#FFFFFF" width="130" height="60" rx="9" ry="9"></rect>
                 </a>
               </g>
               <g class="hover_group" opacity="0">
-                <a id="rhel" onclick="openOperatingSystems('rhel')">
+                <!--<a id="rhel" onclick="openOperatingSystems('rhel')">-->
+                <a id="rhel">
                   <rect x="590" y="510" opacity="0.2" fill="#FFFFFF" width="130" height="60" rx="9" ry="9"></rect>
                 </a>
               </g>
@@ -352,17 +396,20 @@
 
               <!--SCRIPTING-->
               <g class="hover_group" opacity="0">
-                <a id="bash" onclick="openScripting('bash')">
-                  <rect x="380" y="630" opacity="0.2" fill="#FFFFFF" width="130" height="60" rx="9" ry="9"></rect>
+                <!--<a id="bash" onclick="openScripting('bash')">-->
+                <a id="bash">
+                  <rect x="380" y="630" opacity="0.4" fill="#018B0F " width="130" height="60" rx="9" ry="9"></rect>
                 </a>
               </g>
               <g class="hover_group" opacity="0">
-                <a id="powershell" onclick="openScripting('powershell')">
-                  <rect x="520" y="630" opacity="0.2" fill="#FFFFFF" width="130" height="60" rx="9" ry="9"></rect>
+                <!--<a id="powershell" onclick="openScripting('powershell')">-->
+                <a id="powershell">
+                  <rect x="520" y="630" opacity="0.4" fill="#FDB000" width="130" height="60" rx="9" ry="9"></rect>
                 </a>
               </g>
               <g class="hover_group" opacity="0">
-                <a id="batch" onclick="openScripting('batch')">
+                <!--<a id="batch" onclick="openScripting('batch')">-->
+                <a id="batch">
                   <rect x="520" y="700" opacity="0.2" fill="#FFFFFF" width="130" height="60" rx="9" ry="9"></rect>
                 </a>
               </g>
@@ -370,63 +417,74 @@
 
               <!--VERSION CONTROL SYSTEM-->
               <g class="hover_group" opacity="0">
-                <a id="vcs" onclick="openVCS('vcs')">
-                  <rect x="750" y="980" opacity="0.2" fill="#FFFFFF" width="130" height="60" rx="9" ry="9"></rect>
+                <!--<a id="vcs" onclick="openVCS('vcs')">-->
+                <a id="vcs">
+                  <rect x="750" y="980" opacity="0.4" fill="#018B0F" width="130" height="60" rx="9" ry="9"></rect>
                 </a>
               </g>
 
 
               <!--VCS HOSTING-->
               <g class="hover_group" opacity="0">
-                <a id="github" onclick="openHosting('github')">
+                <!--<a id="github" onclick="openHosting('github')">-->
+                <a id="github">
                   <rect x="520" y="980" opacity="0.2" fill="#FFFFFF" width="130" height="60" rx="9" ry="9"></rect>
                 </a>
               </g>
               <g class="hover_group" opacity="0">
-                <a id="gitlab" onclick="openHosting('gitlab')">
+                <!--<a id="gitlab" onclick="openHosting('gitlab')">-->
+                <a id="gitlab">
                   <rect x="520" y="1050" opacity="0.2" fill="#FFFFFF" width="130" height="60" rx="9" ry="9"></rect>
                 </a>
               </g>
               <g class="hover_group" opacity="0">
-                <a id="azdevops" onclick="openHosting('azdevops')">
-                  <rect x="520" y="1120" opacity="0.2" fill="#FFFFFF" width="130" height="60" rx="9" ry="9"></rect>
+                <!--<a id="azdevops" onclick="openHosting('azdevops')">-->
+                <a id="azdevops">
+                  <rect x="520" y="1120" opacity="0.4" fill="#FFFFFF" width="130" height="60" rx="9" ry="9"></rect>
                 </a>
               </g>
 
 
               <!--WHAT IS A ___?-->
               <g class="hover_group" opacity="0">
-                <a id="loadbalancer" onclick="openSetup('loadbalancer')">
+                <!--<a id="loadbalancer" onclick="openSetup('loadbalancer')">-->
+                <a id="loadbalancer">
                   <rect x="150" y="710" opacity="0.2" fill="#FFFFFF" width="130" height="60" rx="9" ry="9"></rect>
                 </a>
               </g>
               <g class="hover_group" opacity="0">
-                <a id="firewall" onclick="openSetup('firewall')">
+                <!--<a id="firewall" onclick="openSetup('firewall')">-->
+                <a id="firewall">
                   <rect y="710" width="140" opacity="0.2" fill="#FFFFFF" height="60" rx="9" ry="9"></rect>
                 </a>
               </g>
               <g class="hover_group" opacity="0">
-                <a id="apache" onclick="openSetup('apache')">
+                <!--<a id="apache" onclick="openSetup('apache')">-->
+                <a id="apache">
                   <rect x="150" y="640" opacity="0.2" fill="#FFFFFF" width="130" height="60" rx="9" ry="9"></rect>
                 </a>
               </g>
               <g class="hover_group" opacity="0">
-                <a id="fproxy" onclick="openSetup('fproxy')">
-                  <rect  y="640" width="140" opacity="0.2" fill="#FFFFFF" height="60" rx="9" ry="9"></rect>
+                <!--<a id="fproxy" onclick="openSetup('fproxy')">-->
+                <a id="fproxy">
+                  <rect y="640" width="140" opacity="0.2" fill="#FFFFFF" height="60" rx="9" ry="9"></rect>
                 </a>
               </g>
               <g class="hover_group" opacity="0">
-                <a id="rproxy" onclick="openSetup('rproxy')">
+                <!--<a id="rproxy" onclick="openSetup('rproxy')">-->
+                <a id="rproxy">
                   <rect y="570" opacity="0.2" fill="#FFFFFF" width="140" height="60" rx="9" ry="9"></rect>
                 </a>
               </g>
               <g class="hover_group" opacity="0">
-                <a id="tomcat" onclick="openSetup('tomcat')">
+                <!--<a id="tomcat" onclick="openSetup('tomcat')">-->
+                <a id="tomcat">
                   <rect x="150" y="570" opacity="0.2" fill="#FFFFFF" width="130" height="60" rx="9" ry="9"></rect>
                 </a>
               </g>
               <g class="hover_group" opacity="0">
-                <a id="nginx" onclick="openSetup('nginx')">
+                <!--<a id="nginx" onclick="openSetup('nginx')">-->
+                <a id="nginx">
                   <rect x="150" y="500" opacity="0.2" fill="#FFFFFF" width="130" height="60" rx="9" ry="9"></rect>
                 </a>
               </g>
@@ -434,7 +492,8 @@
 
               <!--CONTAINERS-->
               <g class="hover_group" opacity="0">
-                <a id="containers" onclick="openContainers('docker')">
+                <!--<a id="containers" onclick="openContainers('docker')">-->
+                <a id="containers">
                   <rect x="290" y="1010" opacity="0.2" fill="#FFFFFF" width="130" height="60" rx="9" ry="9"></rect>
                 </a>
               </g>
@@ -442,22 +501,26 @@
 
               <!--CLOUD PROVIDERS-->
               <g class="hover_group" opacity="0">
-                <a id="aws" onclick="openCloud('aws')">
+                <!--<a id="aws" onclick="openCloud('aws')">-->
+                <a id="aws">
                   <rect y="1340" width="100" opacity="0.2" fill="#FFFFFF" height="60" rx="9" ry="9"></rect>
                 </a>
               </g>
               <g class="hover_group" opacity="0">
-                <a id="googlecloud" onclick="openCloud('googlecloud')">
+                <!--<a id="googlecloud" onclick="openCloud('googlecloud')">-->
+                <a id="googlecloud">
                   <rect x="110" y="1340" opacity="0.2" fill="#FFFFFF" width="130" height="60" rx="9" ry="9"></rect>
                 </a>
               </g>
               <g class="hover_group" opacity="0">
-                <a id="azure" onclick="openCloud('azure')">
+                <!--<a id="azure" onclick="openCloud('azure')">-->
+                <a id="azure">
                   <rect y="1410" width="100" opacity="0.2" fill="#FFFFFF" height="60" rx="9" ry="9"></rect>
                 </a>
               </g>
               <g class="hover_group" opacity="0">
-                <a id="alibaba" onclick="openCloud('alibaba')">
+                <!--<a id="alibaba" onclick="openCloud('alibaba')">-->
+                <a id="alibaba">
                   <rect x="110" y="1410" opacity="0.2" fill="#FFFFFF" width="130" height="60" rx="9" ry="9"></rect>
                 </a>
               </g>
@@ -465,45 +528,53 @@
 
               <!--NETWORK, SECURITY AND PROTOCOLS-->
               <g class="hover_group" opacity="0">
-                <a id="ftp" onclick="openNetwork('ftp')">
+                <!--<a id="ftp" onclick="openNetwork('ftp')">-->
+                <a id="ftp">
                   <rect x="350" y="1340" width="130" opacity="0.2" fill="#FFFFFF" height="60" rx="9" ry="9"></rect>
                 </a>
               </g>
               <g class="hover_group" opacity="0">
-                <a id="dns" onclick="openNetwork('dns')">
-                  <rect  x="490" y="1340" opacity="0.2" fill="#FFFFFF" width="130" height="60" rx="9" ry="9"></rect>
+                <!--<a id="dns" onclick="openNetwork('dns')">-->
+                <a id="dns">
+                  <rect x="490" y="1340" opacity="0.2" fill="#FFFFFF" width="130" height="60" rx="9" ry="9"></rect>
                 </a>
               </g>
               <g class="hover_group" opacity="0">
-                <a id="http" onclick="openNetwork('http')">
+                <!--<a id="http" onclick="openNetwork('http')">-->
+                <a id="http">
                   <rect x="350" y="1410" width="130" opacity="0.2" fill="#FFFFFF" height="60" rx="9" ry="9"></rect>
                 </a>
               </g>
               <g class="hover_group" opacity="0">
-                <a id="https" onclick="openNetwork('https')">
+                <!--<a id="https" onclick="openNetwork('https')">-->
+                <a id="https">
                   <rect x="490" y="1410" opacity="0.2" fill="#FFFFFF" width="130" height="60" rx="9" ry="9"></rect>
                 </a>
               </g>
               <g class="hover_group" opacity="0">
-                <a id="ssl" onclick="openNetwork('ssl')">
+                <!--<a id="ssl" onclick="openNetwork('ssl')">-->
+                <a id="ssl">
                   <rect x="350" y="1480" opacity="0.2" fill="#FFFFFF" width="130" height="60" rx="9" ry="9"></rect>
                 </a>
               </g>
               <g class="hover_group" opacity="0">
-                <a id="ssh" onclick="openNetwork('ssh')">
+                <!--<a id="ssh" onclick="openNetwork('ssh')">-->
+                <a id="ssh">
                   <rect x="490" y="1480" opacity="0.2" fill="#FFFFFF" width="130" height="60" rx="9" ry="9"></rect>
                 </a>
               </g>
-              
 
-               <!--SERVERLESS-->
-               <g class="hover_group" opacity="0">
-                <a id="vercel" onclick="openServerless('vercel')">
+
+              <!--SERVERLESS-->
+              <g class="hover_group" opacity="0">
+                <!--<a id="vercel" onclick="openServerless('vercel')">-->
+                <a id="vercel">
                   <rect x="710" y="1410" width="100" opacity="0.2" fill="#FFFFFF" height="60" rx="9" ry="9"></rect>
                 </a>
               </g>
               <g class="hover_group" opacity="0">
-                <a id="cloudflare" onclick="openServerless('cloudflare')">
+                <!--<a id="cloudflare" onclick="openServerless('cloudflare')">-->
+                <a id="cloudflare">
                   <rect x="710" y="1340" width="100" opacity="0.2" fill="#FFFFFF" height="60" rx="9" ry="9"></rect>
                 </a>
 
@@ -527,7 +598,6 @@
       <div class="col-md-4">
         <div class="position-sticky" style="top: 2rem;">
           <div class="p-4 mb-3 bg-body-tertiary rounded">
-            <!--<img id="avatar" src="https://www.w3schools.com/tags/img_girl.jpg" height="100%" width="100%">-->
             <h3>Marc Linden</h3>
             <h4>DevOps Engineer</h4>
             <br>
@@ -535,15 +605,16 @@
             <hr>
             <p>Hi, my name is Marc and I am currently working as a DevOps Engineer in one of the largest chemical
               companies in the world. Here I take care of the following tasks among others:</p>
-            <ul>
-              <li>Deploying IT infrastructure components to the Azure Cloud using Terraform</li>
-              <li>Create, maintain and customize CI/CD pipelines in Azure DevOps</li>
-              <li>Create, maintain and develop databases (PostgreSQL, MongoDB)</li>
-              <li>Deploy, customize, and maintain applications on Kubernetes-based platforms (Rancher)</li>
-              <li>Create, maintain and customize Kubernetes files (kustomize)</li>
-              <li>Create, maintain and extend Docker resources (Images, Dockerfile, Compose)</li>
-              <li>Integrate and customize security-related analytics and testing into automated deployments</li>
-              <li>Automation of repetitive tasks and simplification of complex processes</li>
+            <ul style="list-style-type: '&#10095;';">
+              <li>&nbsp;&nbsp;Deploying IT infrastructure components to the Azure Cloud using Terraform</li>
+              <li>&nbsp;&nbsp;Create, maintain and customize CI/CD pipelines in Azure DevOps</li>
+              <li>&nbsp;&nbsp;Create, maintain and develop databases (PostgreSQL, MongoDB)</li>
+              <li>&nbsp;&nbsp;Deploy, customize, and maintain applications on Kubernetes-based platforms (Rancher)</li>
+              <li>&nbsp;&nbsp;Create, maintain and customize Kubernetes files (kustomize)</li>
+              <li>&nbsp;&nbsp;Create, maintain and extend Docker resources (Images, Dockerfile, Compose)</li>
+              <li>&nbsp;&nbsp;Integrate and customize security-related analytics and testing into automated deployments
+              </li>
+              <li>&nbsp;&nbsp;Automation of repetitive tasks and simplification of complex processes</li>
             </ul>
             <p>After work, my DevOps routine doesn't stop. In my spare time I like to learn new things, especially in
               DevOps and Full Stack Development topics. I am passionate about implementing new processes and
@@ -552,7 +623,8 @@
 
             <p>For more information about my skills and knowledge see the roadmap under the tech stack tab. If my
               profile
-              sounds interesting you are welcome to contact me using the information provided in the social tab below.
+              sounds interesting you are welcome to contact me using the information provided in the social section
+              below.
             </p>
             <br>
             <h4 class="fst-italic">Social</h4>
