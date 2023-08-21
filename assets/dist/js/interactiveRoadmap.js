@@ -572,6 +572,12 @@ function openNetwork(buttonId) {
     closeNetwork();
 }
 
+/**
+ * Opens the serverless menu based on the button clicked.
+ *
+ * @param {string} buttonId - The ID of the button that was clicked.
+ * @return {void} This function does not return anything.
+ */
 
 function openServerless(buttonId) {
     var check = document.getElementsByClassName("open-sidebar");
