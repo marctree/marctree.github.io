@@ -18,7 +18,7 @@
   <path d="m380 297.53-4.5-9 4.5 2.25 4.5-2.25Z" fill="#9287e8" stroke="#9287e8" stroke-width="3" stroke-miterlimit="10" pointer-events="all"/>
   <rect x="320" y="160" width="240" height="80" rx="12" ry="12" fill="#23445d" stroke="#b46504" pointer-events="all"/>
   <g fill="#FFF" font-family="Tahoma" font-weight="bold" text-anchor="middle" font-size="17">
-    <text x="439.5" y="197">Programming Languages </text>
+    <text x="439.5" y="197">Programming Languages/</text>
     <text x="439.5" y="217"> External Packages</text>
   </g>
   <rect x="640" y="100" width="130" height="60" rx="9" ry="9" fill="#23445d" stroke="#b46504" pointer-events="all"/>
@@ -219,7 +219,8 @@
   <rect x="330" y="1980" width="200" height="80" rx="12" ry="12" fill="#23445d" stroke="#b46504" pointer-events="all"/>
   <text x="429.5" y="2027" fill="#FFF" font-family="Tahoma" font-weight="bold" text-anchor="middle" font-size="17">Monitoring</text>
   <rect width="160" height="80" rx="12" ry="12" fill="#23445d" stroke="#b46504" pointer-events="all"/>
-  <text x="79.5" y="49" fill="#fff" font-family="Tahoma" font-weight="bold" text-anchor="middle" font-size="21">Topic</text>
+  <text x="79.5" y="34" fill="#fff" font-family="Tahoma" font-weight="bold" text-anchor="middle" font-size="21">Topic/</text>
+  <text x="79.5" y="60" fill="#fff" font-family="Tahoma" font-weight="bold" text-anchor="middle" font-size="21">Subitem</text>
   <rect y="170" width="160" height="70" rx="10.5" ry="10.5" fill="#018B0F" stroke="#2d7600" pointer-events="all"/>
   <text x="79.5" y="214" fill="#fff" font-family="Tahoma" font-weight="bold" text-anchor="middle" font-size="21">Confident</text>
   <rect y="90" width="160" height="70" rx="10.5" ry="10.5" fill="#1BA1E2" stroke="#006eaf" pointer-events="all"/>
